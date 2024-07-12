@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Playlist</title>
+</head>
+<body>
+   <audio id="audioPlayer" controls></audio>
+
+
+    <script>
+
+// Variablen
+const heute = new Date();  // Datum und  Lokalzeit
+zeit = new Date().toLocaleTimeString();
+// document.write(zeit);
+ hzeit=zeit.split(":");
+//document.write(hzeit[0],[1],[2]);
+document.write("h",hzeit[0],"m",hzeit[1],"S",hzeit[2]);  // Stu Min Sek
+let c=0;
+let xz=23;
+let yz=50;
+let r_st=hzeit[0];
+let r_mi=hzeit[1];
+let r_se=hzeit[2];
+
+// document.write("<PRE>   ");
+//document.write(xz,":TEST:",yz);
+//document.write("<BR>");
+// document.write(r_st);
+//document.write(" ");
+// document.write(r_mi);
+//document.write("</PRE>   ");
+
+
+let a_stunden=("stu/".concat(r_st,"-uhr.mp3")); // "-uhr.mp3";
+let a_minuten=("min/".concat(r_mi,"-min.mp3")); // "-min-mp3";
+// document.write(minuten);
+
+
+function soundraus () {
+
+ if (c==0) {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Liste der MP3-Dateien
+            const mp3Files = [
+              a_stunden, // Pfad zu den Stunden .mp3
+              a_minuten, // Pfad zu den Minuten .mp3
+            ];
+
+            let currentTrack = 0;
+            const audioPlayer = document.getElementById('audioPlayer');
+
+            // Funktion, um die nächste Datei abzuspielen
+            function playNext() {
+                if (currentTrack < mp3Files.length) {
+                    audioPlayer.src = mp3Files[currentTrack];
+                    audioPlayer.play();
+                }
+            }
+
+            // Event-Listener, um zum nächsten Track zu wechseln, wenn der aktuelle Track zu Ende ist
+            audioPlayer.addEventListener('ended', function() {
+                currentTrack++;
+                if (currentTrack < mp3Files.length) {
+                    playNext();
+                }
+            });
+
+            // Starte die Wiedergabe mit dem ersten Track
+            playNext();
+        });
+ } // Ende IF
+//  document.write(hzeit[0]);
+//document.write("<BR><BR>");
+//document.write("h",hzeit[0],"m",hzeit[1],"S",hzeit[2]);  // Stu Min Sek
+ c=c+1 ;
+
+
+// aktuelle Uhrzeit holen:
+zeit = new Date().toLocaleTimeString();
+hzeit=zeit.split(":");
+//document.write("h",hzeit[0],"m",hzeit[1],"S",hzeit[2]);  // Stu Min Sek
+let r_st=hzeit[0];
+let r_mi=hzeit[1];
+let r_se=hzeit[2];
+
+
+
+//  document.write(" ",c," ");
+// document.write(" TEST TEST  | ");
+//   document.write(r_st,":",r_mi,":",r_se);
+//   document.write("<BR>  ");
+
+// Hier werden alle 10 Minuten abgefragt. 
+
+
+if (r_st==00 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==00 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==00 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==00 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==00 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==01 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==02 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==03 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==05 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==05 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==05 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==04 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==05 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==05 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==06 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==07 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==08 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==09 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==10 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==11 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==12 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==13 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==00) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==20) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==30) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==40) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==14 && r_mi==50) {
+if (r_se < 10 ){
+machneu (); }}
+
+
+if (r_st==15 && r_mi==00) {
+if (r_se < 15 ){
+machneu ();
+}
+}
+
+if (r_st==15 && r_mi==10) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==15 && r_mi==20) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+
+if (r_st==15 && r_mi==30) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==15 && r_mi==40) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==15 && r_mi==50) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==00) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==10) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==20) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==30) {
+if (r_se < 10 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==40) {
+if (r_se < 10 ){
+machneu ();
+}}
+
+if (r_st==16 && r_mi==50) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==00) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==10) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==20) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==30) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==40) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==17 && r_mi==50) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+
+if (r_st==18 && r_mi==00) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==18 && r_mi==10) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==18 && r_mi==20) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==18 && r_mi==30) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==18 && r_mi==40) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==18 && r_mi==50) {
+if (r_se < 15 ){
+machneu ();
+}}
+
+if (r_st==19 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==19 && r_mi==10) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==19 && r_mi==20) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==19 && r_mi==30) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==19 && r_mi==40) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==19 && r_mi==50) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==10) {
+if (r_se < 10 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==10) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==20) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==30) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==40) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==20 && r_mi==50) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==10) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==20) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==30) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==40) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==21 && r_mi==50) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==10) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==20) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==30) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==40) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==22 && r_mi==50) {
+if (r_se < 15 ){
+machneu (); }}
+
+
+if (r_st==23 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==23 && r_mi==10) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==23 && r_mi==20) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==23 && r_mi==30) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==23 && r_mi==40) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==23 && r_mi==50) {
+if (r_se < 15 ){
+machneu (); }}
+
+if (r_st==00 && r_mi==00) {
+if (r_se < 15 ){
+machneu (); }}
+
+
+//  document.write(" ",c," ");
+
+
+function machneu () {
+setTimeout(function() {
+    location.reload();
+  }, 10000);
+}
+
+
+// document.write(c," ");
+
+
+} // Ende Soundaus
+
+function loopFunction() {
+ soundraus ();
+ uhrzeit ();
+//  document.write(c," ");
+
+
+setTimeout(loopFunction, 4000);
+}
+
+
+// Seite wird automatisch neugeladen !! 
+
+// setTimeout(function() {
+//    location.reload();
+//  }, 10000);
+
+
+
+
+function uhrzeit(){
+
+// const heute = new Date();  // Datum und  Lokalzeit
+// const zeit = new Date().toLocaleTimeString(); 	
+// document.write("<br>");
+// document.write(zeit);
+// hzeit=zeit.split(":");
+// document.write(hzeit[0]);
+// document.write(r_st," : ",r_mi," : ",r_se);
+
+
+// Ende Uhrzeit ()
+}
+
+
+
+loopFunction();
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
